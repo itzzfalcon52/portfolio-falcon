@@ -2,7 +2,6 @@ import React from 'react'
 import { Card,CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Project from '@/components/helpers/Project'
-import { de } from 'date-fns/locale'
 
 function ProjectsCard() {
 
@@ -23,21 +22,19 @@ function ProjectsCard() {
     {
         image:"/UmbrellaAlert.png",
         title:"Umbrella Alert - Weather Notification App",
-        description:"A weather notification app that shows weather forecasts and lets user compaer weathers of cities",
+        description:"A weather notification app that shows weather forecasts and lets user compare weathers of cities",
         github:"https://github.com/itzzfalcon52/React--Weather_app",
         link:"https://umbrellaalert.netlify.app/"
-
     }
 ]
 
-
 return (
     <div className='mt-4 font-mono'>
-            <Card className='bg-zinc-900 border-zinc-700 w-full'>
+            <Card className='bg-white border-zinc-300 dark:bg-zinc-900 dark:border-zinc-700 w-full'>
                     <CardContent>
-                         <div className='flex justify-between items-center text-white font-mono text-lg'>
+                         <div className='flex justify-between items-center text-zinc-900 dark:text-white font-mono text-lg'>
                             <h1 className='font-bold'>Projects</h1>
-                            <Button variant="outline" size="sm" className='border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-zinc-900'>
+                            <Button variant="outline" size="sm" className='border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-zinc-900'>
                                     View All <span className='ml-2'>&rarr;</span>
                             </Button>
                          </div>
@@ -54,10 +51,6 @@ return (
                                     />
                                 ))}
                             </div>
-
-
-
-                        
                     </CardContent>
             </Card>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTheme } from "next-themes";
 
 // Array of code symbols that will be randomly displayed as particles
 const SYMBOLS = ["{", "}", "<", ">", "/", ";", "=", "()", "=>", "[]"];
@@ -14,6 +15,11 @@ function BackgroundCodeParticles() {
   
   // Ref to track mouse position (starts off-screen)
   const mouse = useRef({ x: -1000, y: -1000 });
+
+  // Get current theme to adjust particle colors
+  const { theme, systemTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const isDark = currentTheme === "dark";
 
   useEffect(() => {
     // Get canvas element and 2D drawing context
@@ -33,8 +39,8 @@ function BackgroundCodeParticles() {
     window.addEventListener("resize", resize);
 
     // Calculate number of particles based on screen size
-    // Larger screens get more particles (1 particle per 15000 pixels)
-    const PARTICLE_COUNT = Math.floor((window.innerWidth * window.innerHeight) / 15000);
+    // Increased density: 1 particle per 7000 pixels (was 10000)
+    const PARTICLE_COUNT = Math.floor((window.innerWidth * window.innerHeight) / 7000);
 
     // Create array of particle objects with random properties
     particlesRef.current = Array.from({ length: PARTICLE_COUNT }).map(() => ({
@@ -45,7 +51,12 @@ function BackgroundCodeParticles() {
       size: 10 + Math.random() * 8,            // Font size (10-18px)
       char: SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)], // Random symbol
       opacity: 0.1 + Math.random() * 0.15,     // Random opacity (0.1-0.25)
-      color: Math.random() > 0.7 ? 'rgba(59, 130, 246,' : 'rgba(255, 255, 255,', // 30% blue, 70% white
+      // 30% blue accent, 70% theme-aware color
+      color: Math.random() > 0.7 
+        ? 'rgba(59, 130, 246,' // blue accent
+        : isDark 
+          ? 'rgba(255, 255, 255,' // white for dark mode
+          : 'rgba(39, 39, 42,',   // zinc-800 for light mode
     }));
 
     // Main animation loop
@@ -115,7 +126,7 @@ function BackgroundCodeParticles() {
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMouseMove);
     };
-  }, []); // Empty dependency array = run once on mount
+  }, [isDark]); // Re-run when theme changes
 
   return (
     <canvas

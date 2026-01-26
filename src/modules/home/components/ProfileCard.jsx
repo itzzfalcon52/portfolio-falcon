@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Avatar,AvatarImage } from '@radix-ui/react-avatar'
 import { Badge } from '@/components/ui/badge'
+import TypewriterText from '@/utils/TypewriterText'
 
 function ProfileCard() {
 return (
@@ -12,11 +13,13 @@ return (
                 Available for Hire
                 
              </Badge>
-             <h1 className='text-white text-3xl px-4 py-2 font-bold font-mono'>I&#39;m Hussain</h1>
-             <p className="text-zinc-400 py-2 px-4 text-sm font-mono ">
+             <h1 className='dark:text-white text-zinc-800 text-3xl px-4 py-2 font-bold font-mono'>
+                <TypewriterText text="I'm Hussain..." speed={40} startDelay={200}/>
+             </h1>
+             <p className="dark:text-zinc-400 text-zinc-700 py-2 px-4 text-sm font-mono ">
                Building scalable web applications and engaging user experiences.
              </p>
-             <p className="text-zinc-400 px-4 text-sm font-mono">
+             <p className="dark:text-zinc-400 text-zinc-700 px-4 text-sm font-mono">
              BITS Hyderabad,India
              </p>
 
