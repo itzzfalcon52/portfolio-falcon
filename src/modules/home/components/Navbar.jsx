@@ -4,8 +4,10 @@ import Link from 'next/link'
 import { House,CircleUserRound,FolderOpenDot,Handbag,Sun,Moon,NotebookPen } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useTheme } from 'next-themes'
+import HireModal from '@/utils/Modals/HireModal';
 
 function Navbar() {
+  const [hireIsOpen,setHireIsOpen]=React.useState(false);
 
     const {theme,setTheme,systemTheme}=useTheme();
 
@@ -42,9 +44,20 @@ function Navbar() {
         >
           {isDark ? <Moon size={24} /> : <Sun size={24} />}
         </button>
+        <button onClick={()=>setHireIsOpen(true)}>
             <Button variant="outline" size="sm" className='border-green-400 text-green-400 bg-zinc-600 dark:bg-none hover:bg-green-400 hover:text-zinc-50 hover:-translate-y-0.5'>
                 Hire Me
             </Button>
+
+            </button>
+
+        <HireModal
+                open={hireOpen}
+                onOpenChange={setHireOpen}
+                resumeUrl="/resume.pdf"
+                email="mailto:hussaintaherkagalwala5253@gmail.com?subject=Internship%20Opportunity"
+                linkedinUrl="https://www.linkedin.com/in/hussain-kagalwala-467a77328/"
+              />
             
 
             
