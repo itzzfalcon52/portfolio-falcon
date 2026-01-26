@@ -42,7 +42,7 @@ export default function ProjectsPage() {
       },
     {
       slug: "worldwise",
-      image: "/WorldWise.png", // TODO: add this image to /public (or change path)
+      image: "/worldWise.png", 
       title: "WorldWise — Track Your Trips Efficiently",
       description:
         "WorldWise is a travel tracking web app where you can keep a record of the cities you’ve visited around the world. It includes an interactive map, date picker, and notes — tied together with a smooth React experience.",
@@ -52,7 +52,7 @@ export default function ProjectsPage() {
     },
     {
       slug: "yumlyst",
-      image: "/Yumlyst.png", // TODO: add this image to /public (or change path)
+      image: "/yumlyst.png",
       title: "Yumlyst — Recipe Search & Cooking Assistant",
       description:
         "Yumlyst is a modern, responsive web app that helps you search dishes and get step-by-step recipes. It also lets you customize ingredient quantities based on servings.",
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
     },
     {
       slug: "usepopcorn",
-      image: "/UsePopcorn.png", // TODO: add this image to /public (or change path)
+      image: "/usePopcorn.png", 
       title: "usePopcorn — Movie Finder & Watch Tracker",
       description:
         "usePopcorn is a movie-finding web app built with React. It uses the OMDb API to fetch movie data and allows users to search, explore, and track movies they’ve watched.",
