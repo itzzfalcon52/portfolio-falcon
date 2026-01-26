@@ -17,7 +17,7 @@ export default function CaseStudies() {
         "Solved tracking & user progress",
       ],
       tech: ["Next.js", "Node.js", "Prisma", "PostgreSQL", "Judge0"],
-      href: "#",
+      href: "/blog/scalable-code-execution-platform",
     },
     {
       title: " Building a Realtime 2D Multiplayer Metaverse",
@@ -31,7 +31,7 @@ export default function CaseStudies() {
         "Voice and Video infrastructure using WebRTC",
       ],
       tech: ["React", "Phaser", "WebSockets", "WebRTC", "Node.js"],
-      href: "#",
+      href: "/blog/realtime-2d-multiplayer-metaverse",
     },
   ];
 

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen  justify-center py-12 font-sans dark:bg-zinc-900 bg-zinc-100 text-zinc-800 dark:text-zinc-50 ">
       <BackgroundCodeParticles />
-     <div className="w-full max-w-xl rounded-xl space-y-6 dark:bg-zinc-800 bg-zinc-200 text-zinc-800 ">
+     <div className="w-full max-w-3xl max-md:max-w-xl rounded-xl space-y-6 dark:bg-zinc-800 bg-zinc-200 text-zinc-800 ">
         <Navbar/>
         <ProfileCard />
         <CaseStudies/>

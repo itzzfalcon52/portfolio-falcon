@@ -2,6 +2,7 @@ import React from 'react'
 import { Card,CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Project from '@/components/helpers/Project'
+import Link from 'next/link'
 
 function ProjectsCard() {
 
@@ -34,9 +35,11 @@ return (
                     <CardContent>
                          <div className='flex justify-between items-center text-zinc-900 dark:text-white font-mono text-lg'>
                             <h1 className='font-bold'>Projects</h1>
+                            <Link href="/projects">
                             <Button variant="outline" size="sm" className='border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-zinc-900'>
                                     View All <span className='ml-2'>&rarr;</span>
                             </Button>
+                            </Link>
                          </div>
 
                             <div className='mt-4 space-y-4'>

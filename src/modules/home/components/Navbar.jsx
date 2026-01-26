@@ -27,7 +27,7 @@ function Navbar() {
         <Link href={"/projects"} className='dark:text-zinc-300  text-zinc-800 font-semibold text-lg flex items-center gap-2 hover:-translate-y-0.5'>
             <FolderOpenDot size={24} />
         </Link>
-        <Link href={"/products"} className='dark:text-zinc-300  text-zinc-800 font-semibold text-lg flex items-center gap-2 hover:-translate-y-0.5'>
+        <Link href={"/blog"} className='dark:text-zinc-300  text-zinc-800 font-semibold text-lg flex items-center gap-2 hover:-translate-y-0.5'>
             <NotebookPen size={24} />
         </Link>
 

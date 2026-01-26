@@ -5,9 +5,9 @@ export default function Footer() {
 
   // TODO: replace with your real links
   const links = {
-    github: "https://github.com/your-username",
-    linkedin: "https://www.linkedin.com/in/your-handle",
-    email: "mailto:youremail@example.com",
+    github: "https://github.com/itzzfalcon52",
+    linkedin: "https://www.linkedin.com/in/hussain-kagalwala-467a77328/",
+    email: "mailto:hussaintaherkagalwala5253@gmail.com",
   };
 
   return (
