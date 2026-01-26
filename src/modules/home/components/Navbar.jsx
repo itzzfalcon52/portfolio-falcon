@@ -52,8 +52,8 @@ function Navbar() {
             </button>
 
         <HireModal
-                open={hireOpen}
-                onOpenChange={setHireOpen}
+                open={hireIsOpen}
+                onOpenChange={setHireIsOpen}
                 resumeUrl="/resume.pdf"
                 email="mailto:hussaintaherkagalwala5253@gmail.com?subject=Internship%20Opportunity"
                 linkedinUrl="https://www.linkedin.com/in/hussain-kagalwala-467a77328/"
