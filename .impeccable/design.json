@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T00:00:00Z",
+  "title": "Design System: Hussain Kagalwala",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f6f2ea", "cssVar": "--paper", "theme": "light", "tonalRamp": ["#2a2722", "#45403a", "#625c53", "#827a6f", "#a39b8f", "#c5bdb1", "#e3ddd2", "#f6f2ea"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1c1a17", "cssVar": "--ink", "theme": "light", "tonalRamp": ["#1c1a17", "#34312c", "#4e4a43", "#6a655d", "#88827a", "#a7a199", "#c8c3bb", "#e9e5de"] },
+      "muted": { "role": "neutral", "displayName": "Muted Stone", "canonical": "#6b645b", "cssVar": "--muted", "theme": "light", "tonalRamp": ["#26231f", "#3c3833", "#534e47", "#6b645b", "#857e74", "#a19a90", "#c0bab1", "#e2ddd6"] },
+      "rule": { "role": "neutral", "displayName": "Rule", "canonical": "#e0d9cc", "cssVar": "--rule", "theme": "light", "tonalRamp": ["#2b2822", "#47423a", "#655e53", "#857d70", "#a69e90", "#c4bcae", "#e0d9cc", "#f3efe7"] },
+      "wash": { "role": "neutral", "displayName": "Wash", "canonical": "#ede7dc", "cssVar": "--wash", "theme": "light", "tonalRamp": ["#2a2722", "#46423b", "#645e55", "#847d72", "#a59e92", "#c6bfb3", "#ede7dc", "#f8f5ef"] },
+      "accent-blue": { "role": "primary", "displayName": "Hoodie Blue", "canonical": "#1d6a9e", "cssVar": "--accent-blue", "theme": "light", "tonalRamp": ["#0b2638", "#113d5b", "#18557f", "#1d6a9e", "#3f88bb", "#6fa8d0", "#a5cae4", "#dcebf5"] },
+      "accent-marigold": { "role": "secondary", "displayName": "Marigold", "canonical": "#a84e0c", "cssVar": "--accent-marigold", "theme": "light", "tonalRamp": ["#3a1b05", "#5c2b07", "#823d0a", "#a84e0c", "#c86d2a", "#de9558", "#edbf92", "#f8e5d2"] },
+      "accent-olive": { "role": "tertiary", "displayName": "Olive", "canonical": "#56632a", "cssVar": "--accent-olive", "theme": "light", "tonalRamp": ["#1d220e", "#2f3717", "#424d20", "#56632a", "#71803f", "#939f63", "#bac393", "#e3e8cf"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite", "canonical": "#171716", "cssVar": "--paper", "theme": "dark", "tonalRamp": ["#171716", "#2c2b29", "#43423f", "#5c5a57", "#787571", "#96938e", "#b8b5b0", "#dcdad6"] },
+      "ink-dark": { "role": "neutral", "displayName": "Ink (graphite theme)", "canonical": "#ece8e1", "cssVar": "--ink", "theme": "dark" },
+      "muted-dark": { "role": "neutral", "displayName": "Muted Stone (graphite theme)", "canonical": "#9c968d", "cssVar": "--muted", "theme": "dark" },
+      "rule-dark": { "role": "neutral", "displayName": "Rule (graphite theme)", "canonical": "#2c2b29", "cssVar": "--rule", "theme": "dark" },
+      "wash-dark": { "role": "neutral", "displayName": "Wash (graphite theme)", "canonical": "#222120", "cssVar": "--wash", "theme": "dark" },
+      "accent-blue-dark": { "role": "primary", "displayName": "Hoodie Blue (graphite theme)", "canonical": "#6cb8e6", "cssVar": "--accent-blue", "theme": "dark" },
+      "accent-marigold-dark": { "role": "secondary", "displayName": "Marigold (graphite theme)", "canonical": "#f0954a", "cssVar": "--accent-marigold", "theme": "dark" },
+      "accent-olive-dark": { "role": "tertiary", "displayName": "Olive (graphite theme)", "canonical": "#a9b86a", "cssVar": "--accent-olive", "theme": "dark" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The name only; per-letter pointer reaction from wght 640 / wdth 92 toward wght 800 / wdth 78." },
+      "headline": { "displayName": "Headline", "purpose": "The contact line." },
+      "article-title": { "displayName": "Article Title", "purpose": "Blog post titles." },
+      "hook": { "displayName": "Hook", "purpose": "The one sentence under the name; muted, one ink word underlined in accent; max 30ch." },
+      "title": { "displayName": "Title", "purpose": "Work item names; article h2 at 640 / 1.375rem is its sibling." },
+      "section": { "displayName": "Section", "purpose": "Section headings followed by a hairline to the column edge." },
+      "body": { "displayName": "Body", "purpose": "Running text; 54-58ch for descriptions, 68ch for article prose." },
+      "label": { "displayName": "Label (Mono)", "purpose": "Dates, status, tags, footer, terminal. Data only." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default for every transition (180-420ms), reveals (640ms, 14px rise, 70ms stagger), and the theme view-transition reveal." },
+      { "name": "ease-spring", "value": "cubic-bezier(0.34, 1.3, 0.64, 1)", "purpose": "Small user-triggered moments only: poke bubble, name letter reaction, copy check, cookie icon." },
+      { "name": "reduced-motion", "value": "transition-property: opacity, color, background-color, border-color; animation 1ms", "purpose": "prefers-reduced-motion collapses movement to colour and opacity." }
+    ],
+    "breakpoints": [
+      { "name": "narrow", "value": "480px", "purpose": "Copy-email pill relaxes to 14px radius." },
+      { "name": "stack", "value": "560px", "purpose": "Timeline and stack label column collapses to one column." },
+      { "name": "touch", "value": "(hover: none), (pointer: coarse)", "purpose": "Floating preview disabled; preview renders inline in the opened row." }
+    ],
+    "config": {
+      "followPreview": { "GUTTER_GAP": 32, "MAX_W": 320, "MIN_DOCK_W": 200, "CURSOR_GAP": 24, "FLOAT_W": 260, "LERP": 0.18, "MAX_TILT": 4, "source": "src/components/WorkList.tsx" },
+      "portrait": { "MATRIX": 8, "CELL_1X": 2, "CELL_2X": 3, "CELL_3X": 4, "DOT_FILL": 1, "EDGE_SOFTNESS": 5, "FADE_TOP": 0.06, "FADE_BOTTOM": 0.34, "STRAY": 0.05, "PUSH_RADIUS": 44, "RIPPLE_RADIUS": 90, "source": "src/components/Portrait.tsx" }
+    }
+  },
+  "components": [
+    {
+      "name": "Text Link",
+      "kind": "nav",
+      "refersTo": "text-link",
+      "description": "Quiet underlined link; underline and text turn accent on hover, arrow nudges.",
+      "html": "<a class=\"ds-link\" href=\"#\">See work <svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2.5v11M3.5 9L8 13.5 12.5 9\"/></svg></a>",
+      "css": ".ds-link { display: inline-flex; align-items: center; gap: 0.35em; color: var(--ink, #1c1a17); font-weight: 540; text-decoration: underline; text-decoration-color: var(--rule, #e0d9cc); text-decoration-thickness: 1.5px; text-underline-offset: 0.28em; transition: color 180ms cubic-bezier(0.16,1,0.3,1), text-decoration-color 180ms cubic-bezier(0.16,1,0.3,1); } .ds-link svg { transition: transform 260ms cubic-bezier(0.16,1,0.3,1); } .ds-link:hover { color: var(--accent, #1d6a9e); text-decoration-color: currentColor; } .ds-link:hover svg { transform: translateY(2px); } .ds-link:focus-visible { outline: 2px solid var(--accent, #1d6a9e); outline-offset: 3px; border-radius: 3px; }"
+    },
+    {
+      "name": "Copy Email",
+      "kind": "button",
+      "refersTo": "copy-email",
+      "description": "The only button-like control: outlined hairline pill, no fill; accent border when copied.",
+      "html": "<button class=\"ds-copy\" type=\"button\"><span>hello@example.com</span><svg width=\"17\" height=\"17\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5.5\" y=\"5.5\" width=\"8\" height=\"8\" rx=\"1.5\"/><path d=\"M10.5 3.5v-.5A1.5 1.5 0 009 1.5H3A1.5 1.5 0 001.5 3v6A1.5 1.5 0 003 10.5h.5\"/></svg></button>",
+      "css": ".ds-copy { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1.1rem; background: transparent; color: var(--ink, #1c1a17); border: 1px solid var(--rule, #e0d9cc); border-radius: 999px; font: inherit; font-weight: 540; cursor: pointer; transition: border-color 200ms cubic-bezier(0.16,1,0.3,1), transform 200ms cubic-bezier(0.16,1,0.3,1); } .ds-copy svg { color: var(--muted, #6b645b); } .ds-copy:hover { border-color: var(--ink, #1c1a17); } .ds-copy:active { transform: scale(0.98); } .ds-copy:focus-visible { outline: 2px solid var(--accent, #1d6a9e); outline-offset: 3px; }"
+    },
+    {
+      "name": "Work Row",
+      "kind": "custom",
+      "refersTo": "work-row",
+      "description": "Ruled list row: title, muted line, mono tags, plus icon that rotates when open.",
+      "html": "<ul class=\"ds-work\"><li class=\"ds-work-row\"><button class=\"ds-work-toggle\" type=\"button\"><span class=\"ds-work-name\">Holdfast <span class=\"ds-work-note\">churn copilot</span></span><span class=\"ds-work-icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M8 3v10M3 8h10\"/></svg></span><span class=\"ds-work-line\">Retention briefs from an agent with guardrails and evals.</span><span class=\"ds-work-tags\">LangGraph · FastAPI · Postgres</span></button></li></ul>",
+      "css": ".ds-work { list-style: none; margin: 0; padding: 0; } .ds-work-row { border-top: 1px solid var(--rule, #e0d9cc); border-bottom: 1px solid var(--rule, #e0d9cc); } .ds-work-toggle { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 1fr auto; column-gap: 1.25rem; width: 100%; padding: 1.25rem 0 1.3rem; cursor: pointer; text-align: left; } .ds-work-name { font-size: 1.3125rem; line-height: 1.25; font-weight: 620; letter-spacing: -0.015em; color: var(--ink, #1c1a17); display: inline-flex; gap: 0.75rem; align-items: baseline; transition: color 200ms cubic-bezier(0.16,1,0.3,1), transform 320ms cubic-bezier(0.16,1,0.3,1); } .ds-work-note { color: var(--muted, #6b645b); font-weight: 400; } .ds-work-icon { grid-row: 1; grid-column: 2; align-self: center; width: 28px; height: 28px; display: grid; place-items: center; color: var(--muted, #6b645b); transition: transform 320ms cubic-bezier(0.16,1,0.3,1), color 200ms; } .ds-work-line { grid-column: 1; margin-top: 0.3rem; color: var(--muted, #6b645b); max-width: 54ch; } .ds-work-tags { grid-column: 1; margin-top: 0.6rem; color: var(--muted, #6b645b); font-family: var(--font-mono, ui-monospace, monospace); font-size: 0.8125rem; } .ds-work-toggle:hover .ds-work-name { color: var(--accent, #1d6a9e); transform: translateX(4px); } .ds-work-toggle:hover .ds-work-icon { color: var(--ink, #1c1a17); } .ds-work-toggle:focus-visible { outline: 2px solid var(--accent, #1d6a9e); outline-offset: 4px; }"
+    },
+    {
+      "name": "Preview Frame",
+      "kind": "card",
+      "refersTo": "preview-frame",
+      "description": "16:10 paper frame with a 1px inset ink outline; illustrations carry a mono label.",
+      "html": "<div class=\"ds-frame\"><span class=\"ds-frame-label\">illustration</span></div>",
+      "css": ".ds-frame { position: relative; width: 300px; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 6px; background: var(--paper, #f6f2ea); outline: 1px solid var(--ink, #1c1a17); outline-offset: -1px; } .ds-frame-label { position: absolute; right: 8px; bottom: 6px; padding: 0 2px; background: var(--paper, #f6f2ea); font-family: var(--font-mono, ui-monospace, monospace); font-size: 0.6875rem; color: var(--muted, #6b645b); }"
+    },
+    {
+      "name": "Section Title",
+      "kind": "custom",
+      "refersTo": "section",
+      "description": "Narrow-width heavy heading with a hairline running to the column edge.",
+      "html": "<h2 class=\"ds-section-title\">Work</h2>",
+      "css": ".ds-section-title { display: flex; align-items: center; gap: 1rem; margin: 0; font-size: 1.0625rem; font-weight: 660; letter-spacing: -0.005em; font-variation-settings: \"opsz\" 24, \"wdth\" 86; color: var(--ink, #1c1a17); } .ds-section-title::after { content: \"\"; flex: 1; height: 1px; background: var(--rule, #e0d9cc); }"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "44px circular icon button; wash ground on hover.",
+      "html": "<button class=\"ds-toggle\" type=\"button\" aria-label=\"Toggle theme\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4.5\"/><path d=\"M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4\"/></svg></button>",
+      "css": ".ds-toggle { all: unset; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; cursor: pointer; color: var(--ink, #1c1a17); transition: background-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-toggle:hover { background: var(--wash, #ede7dc); } .ds-toggle:focus-visible { outline: 2px solid var(--accent, #1d6a9e); outline-offset: 2px; }"
+    },
+    {
+      "name": "Terminal",
+      "kind": "custom",
+      "refersTo": "terminal",
+      "description": "Easter-egg dialog: paper ground, 1px ink border, mono body, accent prompt.",
+      "html": "<div class=\"ds-term\"><div class=\"ds-term-bar\">~/hussain</div><div class=\"ds-term-body\"><div class=\"ds-cmd\"><span class=\"ds-prompt\">$</span> whoami</div><div class=\"ds-out\">full-stack + AI, browser to microcontroller</div></div></div>",
+      "css": ".ds-term { width: 420px; border: 1px solid var(--ink, #1c1a17); border-radius: 10px; background: var(--paper, #f6f2ea); color: var(--ink, #1c1a17); overflow: hidden; font-family: var(--font-mono, ui-monospace, monospace); font-size: 0.8125rem; } .ds-term-bar { padding: 0.6rem 1rem; border-bottom: 1px solid var(--rule, #e0d9cc); color: var(--muted, #6b645b); } .ds-term-body { padding: 1rem; line-height: 1.65; } .ds-prompt { color: var(--accent, #1d6a9e); margin-right: 0.6rem; } .ds-out { color: var(--muted, #6b645b); }"
+    },
+    {
+      "name": "Poke Bubble",
+      "kind": "chip",
+      "refersTo": "poke-bubble",
+      "description": "Speech bubble from the portrait tap: paper, 1px ink border, tail corner, spring entry.",
+      "html": "<span class=\"ds-bubble\">hey, that tickles</span>",
+      "css": ".ds-bubble { display: inline-block; padding: 0.3rem 0.65rem; background: var(--paper, #f6f2ea); color: var(--ink, #1c1a17); border: 1px solid var(--ink, #1c1a17); border-radius: 10px 10px 10px 2px; font-family: var(--font-mono, ui-monospace, monospace); font-size: 0.75rem; white-space: nowrap; transform-origin: 0 100%; animation: ds-bubble-in 320ms cubic-bezier(0.34,1.3,0.64,1) both; } @keyframes ds-bubble-in { from { opacity: 0; transform: scale(0.6) translateY(6px); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Drawn in the Same Ink",
+    "overview": "A calm personal page on one narrow axis. The person appears as a 1-bit ordered-dither portrait whose dots are the exact ink of the type, on warm paper by day and graphite by night. Everything else is typography and hairlines: Bricolage Grotesque does the expressive work through its weight, width and optical-size axes, and JetBrains Mono appears only where data lives (dates, status, tags, the terminal).\n\nDensity is low and the reading order is linear: one centered first viewport, then ruled lists separated by generous section padding. Depth comes from 1px lines, never from lifted surfaces. Colour is near-monochrome; one rare accent arrives on hover, on the hook's single emphasised word, on focus rings and inside the easter eggs.\n\nThe world rejects the stacked-section portfolio template: hero banners, card grids, tech-logo walls, filled \"Hire Me\" buttons.",
+    "keyCharacteristics": [
+      "One ink for type, icons and portrait dots; paper or graphite ground.",
+      "Hairline rules (1px) are the only structure.",
+      "Variable-axis type: width and weight move, the family never changes.",
+      "Square dots as the recurring mark (portrait cells, status pulse, list bullets, favicon).",
+      "One accent at a time, chosen site-wide (blue, marigold or olive).",
+      "Motion is ease-out and quiet; overshoot only on small things the visitor triggered."
+    ],
+    "rules": [
+      { "name": "The One Ink Rule", "body": "Type, icons and portrait dots share one colour token. The portrait is never a photo-tone image; it is ink on paper.", "section": "colors" },
+      { "name": "The Rare Accent Rule", "body": "The accent marks state and a single emphasised word. It never fills a surface larger than the 6px status square.", "section": "colors" },
+      { "name": "The Axis Not Family Rule", "body": "Hierarchy and expression come from weight, width and optical size of the one grotesque. Do not add a second display family.", "section": "typography" },
+      { "name": "The Mono Means Data Rule", "body": "Mono is reserved for dates, status, tags, labels and the terminal. Never set prose or headings in it.", "section": "typography" },
+      { "name": "The Hairline Rule", "body": "Structure is drawn with 1px lines: rule-coloured between content, ink-coloured around objects that float. No drop shadows, no filled cards, no filled chips.", "section": "elevation" },
+      { "name": "The Square Dot Rule", "body": "Any small mark (bullet, status, indicator) is a square in ink or accent, echoing the dither cell. No round dots, no glyph bullets.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do draw every separation with a 1px line: rule colour between content, ink around floating objects.",
+      "Do keep the accent to hover, focus, state, the hook's single word and the easter eggs, and read it from `--accent` so the site-wide accent choice applies.",
+      "Do express hierarchy through Bricolage's weight, width and optical-size axes.",
+      "Do use JetBrains Mono at 0.8125rem with tabular numerals for dates, status and tags.",
+      "Do use `--ease-out` (cubic-bezier(0.16, 1, 0.3, 1)) for transitions, 180 to 420ms; reveals rise 14px over 640ms with 70ms staggers.",
+      "Do reserve `--ease-spring` (cubic-bezier(0.34, 1.3, 0.64, 1)) for small moments the visitor triggered: the poke bubble, letter reactions, the copy check, the cookie icon.",
+      "Do label illustrative previews as illustrations; real screenshots only where they exist.",
+      "Do honour reduced motion: transitions collapse to colour and opacity, reveals do not move."
+    ],
+    "donts": [
+      "Don't use drop shadows or any box-shadow elevation.",
+      "Don't use filled cards, filled chips or filled pills; the wash ground is only for icon-button hover and code blocks.",
+      "Don't combine accents or introduce a fourth one.",
+      "Don't render the portrait in tones or colours other than the current ink.",
+      "Don't use overshoot easing on scroll reveals, layout changes or anything that moves without the visitor's input.",
+      "Don't add a second display family or set headings in mono.",
+      "Don't use round dots or glyph characters as bullets and indicators; use the square mark."
+    ]
+  }
+}
